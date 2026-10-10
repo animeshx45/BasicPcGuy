@@ -1,5 +1,5 @@
-// Spring Boot Backend Base URL
-export const BACKEND_BASE_URL = 'http://localhost:8080';
+// Spring Boot Backend Base URL (configured via Vercel env variable in production, fallback to localhost for development)
+export const BACKEND_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
 
 async function requestApi(path) {
   // 1. Direct call to Spring Boot backend at http://localhost:8080

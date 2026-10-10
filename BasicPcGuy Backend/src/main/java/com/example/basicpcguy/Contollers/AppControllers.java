@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "https://basicpcguy.vercel.app/")
+@CrossOrigin(origins = {"http://localhost:5173", "https://basicpcguy.vercel.app", "https://basicpcguy.vercel.app/"})
 public class AppControllers {
     private final WallpapersService wallpapersService;
     private final ArticlesService articlesService;;
